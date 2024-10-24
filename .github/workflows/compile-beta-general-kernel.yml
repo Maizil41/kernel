@@ -106,7 +106,7 @@ on:
           - -summer-growing
           - -autumn-harvesting
           - -winter-storing
-          - -yourname
+          - -mutiara-wrt
 
 env:
   TZ: America/New_York

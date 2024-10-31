@@ -64,7 +64,7 @@ on:
       kernel_sign:
         description: "Set the kernel custom signature"
         required: false
-        default: "-zicai"
+        default: "-mutiara-wrt"
         type: choice
         options:
           - -zicai

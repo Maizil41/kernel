@@ -65,7 +65,7 @@ on:
       kernel_sign:
         description: "Set the kernel custom signature"
         required: false
-        default: "-rk35xx-ophub"
+        default: "-rk35xx-mutiara"
         type: choice
         options:
           - -rk35xx-ophub
@@ -78,7 +78,7 @@ on:
           - -summer-growing
           - -autumn-harvesting
           - -winter-storing
-          - -mutiara-wrt
+          - -rk35xx-mutiara
       kernel_config:
         description: "Set the path of kernel .config"
         required: false

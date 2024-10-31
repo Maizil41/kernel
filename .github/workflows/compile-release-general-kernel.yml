@@ -70,7 +70,7 @@ on:
       kernel_sign:
         description: "Set the kernel custom signature"
         required: false
-        default: "-ophub"
+        default: "-mutiara-wrt"
         type: choice
         options:
           - -ophub

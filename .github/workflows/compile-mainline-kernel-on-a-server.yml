@@ -85,7 +85,7 @@ on:
         type: choice
         options:
           - -ophub
-          - -yourname
+          - -mutiarawrt
 
 env:
   TZ: America/New_York

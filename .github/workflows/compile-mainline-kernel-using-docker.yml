@@ -59,6 +59,7 @@ on:
           - clang
           - gcc
           - gcc-14.2
+          - gcc-14.3
       compress_format:
         description: "Set the initrd compression format"
         required: false
@@ -75,10 +76,11 @@ on:
         default: "bookworm"
         type: choice
         options:
-          - jammy
-          - noble
+          - trixie
           - bookworm
           - bullseye
+          - noble
+          - jammy
       kernel_sign:
         description: "Set the kernel custom signature"
         required: false

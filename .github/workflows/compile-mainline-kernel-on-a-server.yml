@@ -86,7 +86,7 @@ on:
         type: choice
         options:
           - -ophub
-          - -yourname
+          - -mutiara-wrt
 
 env:
   TZ: Etc/UTC

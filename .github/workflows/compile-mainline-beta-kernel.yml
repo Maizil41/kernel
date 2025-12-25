@@ -1,10 +1,10 @@
 #==========================================================================
-# Description: Compile beta kernel
+# Description: Compile mainline beta kernel
 # Copyright (C) 2021 https://github.com/unifreq/openwrt_packit
 # Copyright (C) 2021 https://github.com/ophub/kernel
 #==========================================================================
 
-name: Compile beta kernel
+name: Compile mainline beta kernel
 
 on:
   repository_dispatch:
@@ -17,13 +17,13 @@ on:
         type: choice
         options:
           - unifreq
+          - ophub
       kernel_version:
         description: "Select kernel version"
         required: false
         default: "6.12.y"
         type: choice
         options:
-          - 5.4.y
           - 5.10.y
           - 5.15.y
           - 6.1.y
@@ -45,10 +45,10 @@ on:
       kernel_config:
         description: "Set the path of kernel .config"
         required: false
-        default: "kernel-config/release/general"
+        default: "kernel-config/release/stable"
         type: choice
         options:
-          - kernel-config/release/general
+          - kernel-config/release/stable
           - false
       kernel_patch:
         description: "Set the directory for kernel patches"
@@ -102,7 +102,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Initialization environment
         id: init
